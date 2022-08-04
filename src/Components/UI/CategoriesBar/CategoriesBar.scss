@@ -1,0 +1,33 @@
+.categories-bar-container{
+    border-top: solid 2px #000;
+    border-bottom: solid 2px #000;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: 120px;
+
+    .categories-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5em;
+        outline: solid 1px #000;
+        transition: 0.75s ease;
+        cursor: pointer;
+        
+        .categorie-icon{
+            width: 50px;
+            height: 50px;   
+        }
+
+        p{
+            font-family: roboto;
+            font-weight: bolder;
+        }
+    }
+
+    .categories-content:hover{
+        color: #fff;
+        background: #000;
+    }
+}
